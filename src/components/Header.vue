@@ -1,5 +1,9 @@
 <template>
     <!-- header component -->
+    <div id="header">
+        <div class="logo">
+            <img src="../assets/logo.png" alt="logo">
+        </div>
     <nav class="navbar">
         <ul class="navbar_links">
             <li class="nav-link"><RouterLink to="/">Home</RouterLink></li>
@@ -8,6 +12,7 @@
             <li class="nav-link"><RouterLink to="/:catchAll(.*)">NotFound</RouterLink></li>
         </ul>
     </nav>
+</div>
 </template>
 
 <script>
@@ -17,11 +22,19 @@
 </script>
 
 <style>
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0d46830b;
+        font-family: 'DM Sans', sans-serif;
+        padding: 1rem;
+    }
+    
     .navbar {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;         
-        background-color: #24292e;
+        align-items: center;         
         font-family: 'DM Sans', sans-serif;
         padding: 1rem;
     }

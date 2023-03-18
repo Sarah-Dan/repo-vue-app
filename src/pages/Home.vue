@@ -1,7 +1,8 @@
 <template>
   <div class="header">
     <Header />
-    <img alt="Vue logo" src="../assets/logo.png">
+    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
+    <img alt="profile" src="../assets/gitprofile.jpg">
     <h1>{{ msg }}</h1>
     <p>Hey there👋, I'm Sarah. Nice to meet you!</p>
     <MyBio>
@@ -39,6 +40,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+img {
+  width: 100%;
+  max-width: 220px;
+  height: 100%;
+  max-height: 230px;
+  border-radius: 50%;
+  margin: 20px 0 0;
+}
+
 h1 {
   margin: 40px 0 0;
 }

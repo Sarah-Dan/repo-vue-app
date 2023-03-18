@@ -1,13 +1,14 @@
 <template>
     <div class="main">
-    <Header />
+        <Header />
         <div class="not-found">
-        <h1>Ooops! Page not found😔</h1>
-        <p>Are you sure you have the right address?</p>
-        <p>
-        </p>
-        <RouterLink to="/" class="home_link">Back to Home</RouterLink>
-    </div>
+            <h1>Ooops! Page not found😔</h1>
+            <img src="../assets/404.png" alt="404" />
+            <p>Are you sure you have the right address?🤔</p>
+            <div>
+                <RouterLink to="/" class="home_link">Back to Home</RouterLink>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -20,20 +21,21 @@ export default {
 </script>
 
 <style>
-/* .main {
+.not-found {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-} */
-.not-found {
-    background-color: #fff;
     padding: 20px;
-    margin: 20px;
     border-radius: 5px;
 }
+
+.not-found img {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 1rem auto;
+}
+
 .home_link {
     color: #0366d6;
     text-decoration: none;

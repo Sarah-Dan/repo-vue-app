@@ -8,19 +8,19 @@
 <script>
 export default {
     name: "LoaderMain",
-    // data() {
-    //     return {
-    //         loading: false,
-    //     };
-    // },
-    // methods: {
-    //     show() {
-    //         this.loading = true;
-    //     },
-    //     hide() {
-    //         this.loading = false;
-    //     },
-    // },
+    data() {
+        return {
+            loading: false,
+        };
+    },
+    methods: {
+        show() {
+            this.loading = true;
+        },
+        hide() {
+            this.loading = false;
+        },
+    },
 };
 </script>
 

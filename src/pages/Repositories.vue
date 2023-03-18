@@ -1,12 +1,9 @@
 <template>
     <div class="container">
         <Header />
-      <h1>Welcome to Github</h1>
-  
-      <!-- Searching the repository feature -->
-      <p>Search for a repository</p>
-      <input type="text" v-model="search" />
-      <button @click="searchRepo">Search</button>
+        <h1>My Repositories</h1> 
+        <input type="text" v-model="search" placeholder="Search for a repository...." />
+        <button @click="searchRepo">Search</button>
       <div v-if="loading">
         <LoaderMain />
       </div>
@@ -17,28 +14,15 @@
               <h2>{{ repo.name }}</h2>
               <p>{{ repo.description }}</p>
               <p>{{ repo.language }}</p>
+                <a :href="repo.html_url" target="_blank" v-on:click.stop
+                    >View on Github</a>
             </div>
           </RouterLink>
         </div>
       </div>
-  
-      <!-- Searching the repository feature -->
-  
-      <!-- <div v-for="repo in repos" :key="repo.id">
-        <RouterLink :to="{ name: 'RepoDetails', params: { id: repo.id } }">
-          <div class="github-repos">
-            <h3>{{ repo.name }}</h3>
-            <p>{{ repo.description }}</p>
-            <p>{{ repo.language }}</p>
-            <a :href="repo.html_url" target="_blank" v-on:click.stop
-              >View on Github</a
-            >
-          </div>
-        </RouterLink>
-      </div>
-      <div v-if="loading">
-        <LoaderMain />
-      </div> -->
+        <div v-if="!repos.length && !loading">
+            <p>No repositories found</p>
+        </div>
       <button @click="prevPage" :disabled="page === 1">Previous</button>
       <button @click="nextPage" :disabled="page === 5">Next</button>
   
@@ -99,7 +83,7 @@
       return {
         loading: false,
         page: 1,
-        perPage: 6,
+        perPage: 5,
         repos: [],
       };
     },
