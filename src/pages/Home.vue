@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div id="home">
     <Header />
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <img alt="profile" src="../assets/gitprofile.jpg">
@@ -39,7 +39,13 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+#home {
+  color: #b4cce3;
+  background-color:rgb(14, 14, 32);
+  width: 100%;
+}
+
 img {
   width: 100%;
   max-width: 220px;

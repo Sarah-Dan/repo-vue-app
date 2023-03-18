@@ -4,67 +4,73 @@
         <div class="logo">
             <img src="../assets/logo.png" alt="logo">
         </div>
-    <nav class="navbar">
-        <ul class="navbar_links">
-            <li class="nav-link"><RouterLink to="/">Home</RouterLink></li>
-            <li class="nav-link"><RouterLink to="/about">About</RouterLink> </li>
-            <li class="nav-link"><RouterLink to="/repositories">My Repositories</RouterLink></li>
-            <li class="nav-link"><RouterLink to="/:catchAll(.*)">NotFound</RouterLink></li>
-        </ul>
-    </nav>
-</div>
+        <nav class="navbar">
+            <ul class="navbar_links">
+                <li>
+                    <RouterLink to="/" class="nav-link">Home</RouterLink>
+                </li>
+                <li>
+                    <RouterLink to="/about" class="nav-link">About</RouterLink>
+                </li>
+                <li>
+                    <RouterLink to="/repositories" class="nav-link">My Repositories</RouterLink>
+                </li>
+                <li>
+                    <RouterLink to="/:catchAll(.*)" class="nav-link">NotFound</RouterLink>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </template>
 
 <script>
-    export default {
-        name: 'Header',
-    }
+export default {
+    name: 'Header',
+}
 </script>
 
 <style>
-    #header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #0d46830b;
-        font-family: 'DM Sans', sans-serif;
-        padding: 1rem;
-    }
-    
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;         
-        font-family: 'DM Sans', sans-serif;
-        padding: 1rem;
-    }
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d46830b;
+    font-family: 'DM Sans', sans-serif;
+    padding: 1rem;
+}
 
-    .navbar_links {
-        display: flex;
-        list-style: none;
-    }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
 
-    .logo {
-        display: flex;
-        align-items: center;
-        color: #fff;
-        text-decoration: none;
-    }
-    
-    .logo img {
-        width: 2rem;
-        margin-right: 1rem;
-    }
-   
-    .nav-link {
-        margin-left: 2rem;
-        font-size: 1rem;
-    }
-    .nav-link-test{
-        padding-left: 6.8rem;
-    }
-    a {
-        color: #fff;
-        text-decoration: none;
-    }
-</style>
+.navbar_links {
+    display: flex;
+    list-style: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    color: rgb(158, 232, 204);
+}
+
+.nav-link:hover {
+    color: rgb(33, 208, 141);
+    border-bottom: 2px solid rgb(111, 155, 211);
+}</style>

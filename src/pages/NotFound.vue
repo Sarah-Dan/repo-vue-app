@@ -37,15 +37,15 @@ export default {
 }
 
 .home_link {
-    color: #0366d6;
+    color: #95c8da;
     text-decoration: none;
     border-radius: 4px;
     padding: 0.8rem;
-    background-color: rgba(3, 102, 214, 0.1);
+    background-color: rgb(14, 134, 110);
     cursor: pointer;
 }
 
 .home_link:hover {
-    background-color: rgba(3, 102, 214, 0.3);
+    background-color: rgba(3, 196, 214, 0.3);
 }
 </style>
