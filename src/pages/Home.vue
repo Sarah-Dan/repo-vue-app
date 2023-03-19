@@ -2,7 +2,7 @@
   <div id="home">
     <Header />
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <img alt="profile" src="../assets/gitprofile.jpg">
+    <img alt="profile" src="../assets/gitprofile.jpg" class="profile"/>
     <h1>{{ msg }}</h1>
     <p>Hey there👋, I'm Sarah. Nice to meet you!</p>
     <MyBio>
@@ -41,12 +41,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 #home {
-  color: #b4cce3;
+  color: #d0deeb;
   background-color:rgb(14, 14, 32);
   width: 100%;
 }
 
-img {
+.profile {
   width: 100%;
   max-width: 220px;
   height: 100%;
@@ -61,6 +61,7 @@ h1 {
 .my_repos {
   background-color: #6bdba8;
   color: #fff;
+  font-weight: 500;
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 4px;

@@ -12,8 +12,7 @@
                         2022.
                     </li>
                     <li>🌱 I’m currently learning React native, Redux, Vue.js, and Python.</li>
-                    <li>😊 I’m looking for help with open source projects, hackathons, internships, and entry-level
-                        opportunities.</li>
+                    <li>😊 I’m looking for help with open source projects, internships, and entry-level opportunities.</li>
                     <li>💼 Job interests: Software Engineer, Front-end Engineer, or UI Engineer (Intern or Junior level).
                     </li>
                     <li>📫 You can view my resume and contact me by emailing <a href="mailto: sarahdanielprecious.com">sarahpdaniel@outlook.com.</a></li>
@@ -54,7 +53,7 @@ export default {
 .about_facts {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
 }
 
 .about_facts ul {
@@ -64,6 +63,7 @@ export default {
 .about_facts li {
     margin: 0.5rem 0;
     list-style: none;
+    text-align: left;
 }
 
 .about_facts li::before {
