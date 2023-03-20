@@ -15,7 +15,8 @@
                     <li>😊 I’m looking for help with open source projects, internships, and entry-level opportunities.</li>
                     <li>💼 Job interests: Software Engineer, Front-end Engineer, or UI Engineer (Intern or Junior level).
                     </li>
-                    <li>📫 You can view my resume and contact me by emailing <a href="mailto: sarahdanielprecious.com">sarahpdaniel@outlook.com.</a></li>
+                    <li>📫 You can view my resume and contact me by emailing <a
+                            href="mailto: sarahdanielprecious.com">sarahpdaniel@outlook.com.</a></li>
                 </ul>
             </div>
         </div>
@@ -53,7 +54,6 @@ export default {
 .about_facts {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
 }
 
 .about_facts ul {

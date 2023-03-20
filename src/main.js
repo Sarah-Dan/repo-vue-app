@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import  Home from './pages/Home.vue';
 import  About from './pages/About.vue';
 import  Repositories from './pages/Repositories.vue';
+import  Repository from './pages/Repository.vue';
 import  NotFound from './pages/NotFound.vue';
 
 const router = createRouter({
@@ -22,6 +23,12 @@ const router = createRouter({
             name: 'Repositories',
             component: Repositories,
         }, {
+            path: '/repositories/:id',
+            name: 'Repository',
+            component: Repository,
+            props: true,
+        },
+        {
             path: '/:catchAll(.*)',
             name: 'NotFound',
             component: NotFound,

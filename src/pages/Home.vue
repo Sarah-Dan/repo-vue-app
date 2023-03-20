@@ -2,14 +2,14 @@
   <div id="home">
     <Header />
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <img alt="profile" src="../assets/gitprofile.jpg" class="profile"/>
+    <img alt="profile" src="../assets/gitprofile.jpg" class="profile" />
     <h1>{{ msg }}</h1>
     <p>Hey there👋, I'm Sarah. Nice to meet you!</p>
     <MyBio>
       <h2>Frontend developer</h2>
       <p>Based in Lagos, Nigeria</p>
     </MyBio>
-    <RouterLink to="/repositories" class="my_repos">View my Repositories</RouterLink>          
+    <RouterLink to="/repositories" class="my_repo">View my Repositories</RouterLink>
   </div>
 </template>
 
@@ -25,16 +25,6 @@ export default {
       data: '',
     }
   },
-  // fetch API data
-  mounted() {
-    fetch('https://api.github.com/users/Sarah-Dan/repos', { 
-      headers: {
-        'Accept': 'application/json',
-      }, 
-    })
-      .then((res) => res.json())
-      .then((data) => (this.data = data));      
-  },
 };
 </script>
 
@@ -42,7 +32,7 @@ export default {
 <style>
 #home {
   color: #d0deeb;
-  background-color:rgb(14, 14, 32);
+  background-color: rgb(14, 14, 32);
   width: 100%;
 }
 
@@ -58,16 +48,18 @@ export default {
 h1 {
   margin: 40px 0 0;
 }
-.my_repos {
+
+.my_repo {
   background-color: #6bdba8;
-  color: #fff;
-  font-weight: 500;
+  color: #03080e;
+  font-weight: 800;
   padding: 0.5rem 1rem;
+  margin-top: 1rem;
   text-decoration: none;
   border-radius: 4px;
 }
-.my_repos:hover {
+
+.my_repo:hover {
   background-color: #42b983;
 }
-
 </style>

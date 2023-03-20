@@ -34,9 +34,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0d46830b;
-    font-family: 'DM Sans', sans-serif;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .navbar {
@@ -67,10 +65,13 @@ export default {
     text-decoration: none;
     margin-left: 2rem;
     font-size: 1.2rem;
+    font-weight: 700;
     color: rgb(158, 232, 204);
 }
+
 
 .nav-link:hover {
     color: rgb(33, 208, 141);
     border-bottom: 2px solid rgb(111, 155, 211);
-}</style>
+}
+</style>
